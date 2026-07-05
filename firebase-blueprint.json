@@ -1,0 +1,75 @@
+{
+  "entities": {
+    "Member": {
+      "title": "Member",
+      "description": "A gym member enrolled in the portal",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the member"
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the member"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the member"
+        },
+        "age": {
+          "type": "number",
+          "description": "Age of the member"
+        },
+        "gender": {
+          "type": "string",
+          "description": "Gender of the member"
+        },
+        "planId": {
+          "type": "string",
+          "description": "The selected membership plan ID"
+        },
+        "preferredTime": {
+          "type": "string",
+          "description": "Preferred training hours"
+        },
+        "fitnessGoal": {
+          "type": "string",
+          "description": "Member's fitness targets"
+        },
+        "joinDate": {
+          "type": "string",
+          "description": "Date of enrollment"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["Active", "Pending", "Suspended"],
+          "description": "Membership status"
+        },
+        "phone number": {
+          "type": "string",
+          "description": "Duplicated beginner-friendly field"
+        },
+        "membership plan": {
+          "type": "string",
+          "description": "Duplicated beginner-friendly field"
+        },
+        "join date": {
+          "type": "string",
+          "description": "Duplicated beginner-friendly field"
+        },
+        "active status": {
+          "type": "string",
+          "description": "Duplicated beginner-friendly field"
+        }
+      },
+      "required": ["name", "phone", "planId", "joinDate", "status"]
+    }
+  },
+  "firestore": {
+    "/Members/{memberId}": {
+      "schema": "Member",
+      "description": "Collection of gym members"
+    }
+  }
+}

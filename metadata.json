@@ -1,0 +1,6 @@
+{
+  "name": "Gym Management Portal",
+  "description": "A modern, responsive frontend portal for a fitness club, featuring membership plans, trainer highlights, a dashboard preview, and an enrollment form.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
