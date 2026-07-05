@@ -35,7 +35,7 @@ export default function Hero({ onExplorePlans, onExploreDemo }: HeroProps) {
             </div>
 
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-7xl tracking-tighter leading-[0.95] text-white uppercase italic">
-              FORGE YOUR POWER. <br />
+              TRAIN LIKE A TITAN. <br />
               <span className="text-gym-accent text-glow">
                 EXCEED EVERY LIMIT.
               </span>
